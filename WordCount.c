@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 #include <string.h>
 #include <stdbool.h>
 #include <ctype.h>
@@ -15,6 +14,7 @@ int countl(FILE *file) //col-vo strok
 {
     int kk = 0;
     char str1[1000];
+    str1[0]=0;
     while (fgets(str1, 1000, file) != NULL)
     {
         int lk = strlen(str1);
@@ -27,8 +27,6 @@ int countl(FILE *file) //col-vo strok
         if (str1[l1 - 1] != '\n')
             kk++;
     }
-    else
-        kk = 0;
     return kk;
 }
 int countw(FILE *file) // col-vo words
@@ -70,7 +68,6 @@ int main(int argc, char *argv[])
             word = 1;
         else
         {
-            //strcpy(fname, argv[i]);
             p = i;
             if (i != (argc - 1))
             {
