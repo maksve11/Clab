@@ -16,10 +16,8 @@ About Labs:
 <aside>
 Название файла и опции передаются через аргументы
 командной строки в следующем формате:
-<aside>
-WordCont.exe [OPTION] filename
-
 </aside>
+WordCont.exe [OPTION] filename
 
 
 #  2. uint1024_t #
