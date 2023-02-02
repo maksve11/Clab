@@ -9,9 +9,9 @@ About Labs:
 строк, слов и байт для указанного файла и выводить эту
 информацию в поток вывода.
 ## Программа должна поддерживать следующие опции:
--l, --lines вывод только количества строк
--c, --bytes вывод размера файла в байтах
--w, --words вывод количества слов
+* -l, --lines вывод только количества строк
+* -c, --bytes вывод размера файла в байтах
+* -w, --words вывод количества слов
 Название файла и опции передаются через аргументы
 командной строки в следующем формате:
 <aside>
@@ -47,12 +47,12 @@ WordCont.exe [OPTION] filename
 ### **Задача**
 Вам предоставлен access.log одного из серверов NASA (скачать).
 Это текстовый файл, каждая строка которого имеет следующий формат:
-$remote_addr - - [$local_time] “$request” $status $bytes_send
-$remote_addr - источник запроса
-$local_time - время запроса
-$request - запрос
-$status - статус ответ
-$bytes_send - количество переданных в ответе байт
+* $remote_addr - - [$local_time] “$request” $status $bytes_send
+* $remote_addr - источник запроса
+* $local_time - время запроса
+* $request - запрос
+* $status - статус ответ
+* $bytes_send - количество переданных в ответе байт
 Например:
 198.112.92.15 - - [03/Jul/1995:10:50:02 -0400] "GET /shuttle/countdown/
 HTTP/1.0" 200 3985
@@ -83,9 +83,9 @@ stdio.h и string.h стандартной библиотеки
 метаинформации с именем prop_name
 
 Например:
-app.exe --filepath=Song.mp3 --show
-app.exe --filepath=Song.mp3 --get=TIT2
-app.exe --filepath=Song.mp3 --set=COMM --value=Test
+* app.exe --filepath=Song.mp3 --show
+* app.exe --filepath=Song.mp3 --get=TIT2
+* app.exe --filepath=Song.mp3 --set=COMM --value=Test
 
 ### Примечание.
 
@@ -161,6 +161,6 @@ app.exe --filepath=Song.mp3 --set=COMM --value=Test
 Свободные аргументы для передачи списка файлов для запаковки
 
 ### Примеры использования:
-● arc --file data.arc --create a.txt b.bin c.bmp
-● arc --file data.arc --extract
-● arc --file data.arc --list
+* arc --file data.arc --create a.txt b.bin c.bmp
+* arc --file data.arc --extract
+* arc --file data.arc --list
