@@ -161,6 +161,6 @@ app.exe --filepath=Song.mp3 --set=COMM --value=Test
 Свободные аргументы для передачи списка файлов для запаковки
 
 ### Примеры использования:
-> arc --file data.arc --create a.txt b.bin c.bmp
-> arc --file data.arc --extract
-> arc --file data.arc --list
+● arc --file data.arc --create a.txt b.bin c.bmp
+● arc --file data.arc --extract
+● arc --file data.arc --list
